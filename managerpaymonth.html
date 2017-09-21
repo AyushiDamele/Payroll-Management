@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>PaySlip</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:white;">
+	<div class="logo"><image src="logo.jpg" width="100%" height="15%"/>
+	<div class="logout" style="float:right;position:relative;margin-right:1%" >
+	<a href="login.html"><i class="glyphicon glyphicon-log-out" width="25%" height="25%" ></i><label >LOG OUT </label></a></div>	
+<ul style="float:left">
+   <li><a href="managerhome.php">Home</a></li>
+  <li><a href="managerpaymonth.html" class="active" >PaySlip</a></li>
+  <li><a href="managerleave.html">Leave</a></li>
+  <li><a href="#">Employee Records</a></li>
+  <li><a href="manageremployeelist.php">Department Details </a></li>
+</ul>
+<div style="margin:2%;margin-left:25%;margin-right:25%;padding:10px 25px;height:auto;overflow:auto;outline:solid;outline-width:1px;">
+ <center><div class="paymonth" >
+
+<form width="80%" action="managerpayslip.php" method="POST">
+<fieldset>
+
+<legend align="center"> VIEW PAYSLIP</legend><br>
+<table width="80%">
+<tr>
+<td class="left">Select Month </td>
+<td class="mid"> :  </td>
+<td class="right">
+<select name="month" required>
+<option disabled selected value><center> -- Select Month -- </center></option>
+<option value="JANUARY"> January </option>
+<option value="FEBRUARY"> February </option>
+<option value="MARCH"> March </option>
+<option value="APRAIL"> Aprail </option>
+<option value="MAY"> May </option>
+<option value="JUNE"> June </option>
+<option value="JULY"> July </option>
+<option value="AUGUST"> August </option>
+<option value="SEPTEMBER"> September </option>
+<option value="OCTOBER"> October </option>
+<option value="NOVEMBER"> November </option>
+<option value="DECEMBER"> December </option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="left"> Select Year </td>
+<td class="mid">: </td>
+<td class="right">
+<select name="year" required>
+<option disabled selected value><center> -- Select Year -- </center></option>
+<option value="2014"> 2014 </option>
+<option value="2015"> 2015 </option>
+<option value="2016"> 2016 </option>
+<option value="2017"> 2017 </option>
+</select>
+</td>
+</tr>
+</table>
+</fieldset><br>
+
+<input type="submit" value="VIEW"/>
+<input type="reset" value="RESET"/>
+
+</form>
+</center>
+</div> 

@@ -1,0 +1,87 @@
+<html>
+<head>
+<title> LOGIN -PAROLL MANAGEMENT SYSTEM</title>
+<style>
+label{
+font-size:18px;
+font-family:Comic Sans MS;}
+.imgcontainer{
+width:35%;
+background-color:green;
+border-radius: 50%;
+}
+div.login{
+margin-left:25%;
+margin-right:25%;
+padding:0;
+}
+
+table,tr{
+font-size:1.2em;
+border-collapse:collapse;
+}
+
+td,th {
+text-align:left;
+padding:10px;
+}
+
+in:hover{
+outline-style:solid;
+outline-color:lightblue;
+}
+
+.in {
+font-size:0.75em;
+}
+
+tr:nth-child(odd)
+{
+background-color:lightgrey;
+}
+
+tr:nth-child(even)
+{
+background-color:white;
+}
+
+input.button
+{
+font-size:1em;
+background-color:black;
+color:white;
+border-radius:15px;
+}
+</style>
+</head>
+<body style="background-color:golden;">
+<a href="login.html"><div class="logo"><image src="logo.jpg" width="100%" height="15%"/></div></a>
+
+<center>
+<div class="login">
+<table>
+<form  method="POST" action="login.php"><br>
+<div class="imgcontainer"><img src="role.jpeg" width="45%" height="35%"/><p><br></p></div>
+<tr>
+<td>
+<label>Employee Id  </label></td>
+<td >
+<input type="text" pattern="[0-9]{3}" class="in" placeholder="Enter Your Employee ID" title="Valid Empid between 101 to 999" name="id" required/></td>
+</tr>
+<tr>
+<td>
+<label> Role </label></td>
+<td> <select class="in" name="role" REQUIRED> <option disabled selected value>--Select Your Role--</option><option value="Employee">Employee </option><option value="Manager">Manager </option><option value="Administrator">Administrator </option></select></td></tr>
+<tr>
+<td>
+<label> Password </label>
+</td>
+<td>
+<input  type="password" class="in" name="pass" placeholder="Enter Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/></td></tr>
+<tr>
+<td colspan="2" style="text-align:center;"><input type="submit" value="LOGIN" class="button"/></td></tr>
+</form>
+</table>
+</div>
+<div class="signup" style="margin:15px" align="center"><a href="signup.html"> NEW USER ? SIGN UP! </a></div>
+</center></body>

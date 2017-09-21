@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>LEAVE</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:white;">
+	<div class="logo"><image src="logo.jpg" width="100%" height="15%"/>
+	<div class="logout" style="float:right;position:relative;margin-right:1%" >
+	<a href="login.html"><i class="glyphicon glyphicon-log-out" width="25%" height="25%" ></i><label >LOG OUT </label></a></div>	
+<ul style="float:left">
+    <li><a href="managerhome.php">Home</a></li>
+  <li><a href="managerpaymonth.html">PaySlip</a></li>
+  <li><a class="active"  href="managerleave.html">Leave</a></li>
+  <li><a href="#">Employee Records</a></li>
+  <li><a href="manageremployeelist.php">Department Details </a></li>
+</ul>
+<div style="margin:2%;margin-left:25%;margin-right:25%;padding:10px 25px;height:auto;overflow:auto;outline:solid;outline-width:1px;">
+ 
+<form action="#" method="POST">
+<center>
+<fieldset>
+<legend width="100%"> LEAVE APPLICATION </legend>
+<table>
+<tr/>
+<tr>
+<td class="left"> Leave Type </td>
+<td class="mid"> : </td>
+<td class="right"> <select><option> Casual Leave (CL) </option><option>Personal Leave (PL)</option> <option> Medical Leave </option></select></td>
+</tr>
+<tr>
+<td class="left"> Duration (no. of days)</td>
+<td class="mid"> : </td>
+<td class="right"><select><option> 1 </option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+</tr>
+<tr>
+<td class="left">Reason </td>
+<td class="mid"> : </td>
+<td class="right"><textarea rows="5" cols="20" placeholder="Reason For Leave"></textarea></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<input type="submit" value="SUBMIT"/><input type="reset" value="RESET"/>
+</center>
+</form>
+</div>
+</body>

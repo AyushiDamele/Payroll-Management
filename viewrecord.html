@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+<script>
+	function dept(){
+	document.getElementById("indidiv").style.display="none";
+	document.getElementById("deptdiv").style.display="block";
+	}
+	function individual(){
+	document.getElementById("indidiv").style.display="block";
+	document.getElementById("deptdiv").style.display="none";
+	}
+</script>
+</head>
+<body style="background-color:white;">
+	<div class="logo"><image src="logo.jpg" width="100%" height="15%"/></div>
+	<div class="logout" style="float:right;position:relative;margin-right:1%" >
+	<a href="login.html"><i class="glyphicon glyphicon-log-out" width="25%" height="25%" ></i><label >LOG OUT </label></a></div>	
+<ul style="float:left">
+ <li><a class="active" href="viewrecord.html">View records </a> </li>
+<li> <a href="#">Edit records</a></li>
+<li> <a href="#"> Add</a></li>
+<li> <a href="#">Payslip </a> </li>
+<li> <a href="#">Report </a>  </li>
+<li> <a href="#">Delete </a> </li>
+</ul>
+<div style="margin:2%;margin-left:25%;margin-right:25%;padding:10px 25px;height:auto;overflow:auto;outline:solid;outline-width:1px;">
+<center>
+<fieldset>
+<legend> VIEW RECORDS</legend>
+<table width="80%">
+<tr></tr>
+<tr>
+<td><center>
+<input type="radio" name="viewtype" REQUIRED id="viewtype" value="department" onclick="dept()">Departmentwise </input></center></td>
+<td><center>
+<input type="radio" name="viewtype" REQUIRED id="viewtype" value="individual" onclick="individual()">Individual </input></center></td>
+</tr>
+</table>
+</fieldset>
+<br>
+ <div id="deptdiv" style="display:none;">
+ <form action="#" method="POST">
+ <table>
+ <tr>
+ <td class="left">Select Department </td>
+ <td class="mid">:</td>
+ <td class="right"><select name="deptname" REQUIRED>
+ <option disabled selected value selected> --Select Department-- </option>
+ <option> Computer Science (CS) </option>
+ <option> Information Technology (IT) </option>
+ <option> Human Resource (HR) </option>
+ <option> Accounts (AC) </option>
+ <option> Academics (AD)</option>
+ </select>
+ </td>
+ </tr>
+ </table>
+ <br><br>
+ <center>
+ <input type="submit" value="VIEW" style="padding:7px;border-style:solid;border-color:lightbrown;border-radius:8px;width:15%">
+</center>
+</form> 
+ </div>
+ <div id="indidiv" style="display:none;">
+ <form action="#" method="POST">
+ <input type="text" REQUIRED pattern="[0-9]{0-4}" placeholder="Enter Employee-id" name="empid" style="width:75%;padding:5px;border-style:solid;border-color:lightbrown;"/>
+<input type="submit" value="VIEW" style="padding:7px;border-style:solid;border-color:lightbrown;border-radius:8px;width:15%">
+ </tr>
+ </table>
+ </form>
+ 
